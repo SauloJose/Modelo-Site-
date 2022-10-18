@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loading()">
+    <header>
+        <h1>Exércicio com Arrays</h1>
+    </header>
+
+    <section>
+        <div id="info">
+            Adicione números (entre 1 e 100) diferentes que serão adicionado a um vetor. Ao finalizar a operação, o console exibirá informações sobre estes valores.
+        </div>
+        <div id="entradas">
+            <p> Adicione os números:  
+                <input type="number" name="txtnumb" id="txtnumb" min='0'> 
+                <button class="btn" onclick="adicionar()"> Adicionar </button>
+            </p>
+        </div>
+        <p id="infovet">Histórico do vetor:</p>
+        <div id="vetor">
+            <select name="nlist" id="nlist" size="6"></select>
+            <p><button class="btn" onclick="finalizar()">Finalizar</button></p>
+        </div>
+        <div id="res">Console:</div>
+        <div id="console"> [SJ]: Aqui exibirá as informações do vetor criado...</div>
+    </section>
+
+    <footer>
+        <p>&copy;SauloJ2022</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
